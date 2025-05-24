@@ -37,4 +37,4 @@ saucedemo-playwright/
 A screenshot from the test run:
 
 
-![Playwright Test Report](https://github.com/user-attachments/assets/5aaf30fa-f2bc-4d09-b12a-b9e6cf4dfc3c)
+![Playwright Test Report](https://github.com/AbdellatifShtayeh/QA-final/blob/main/Playwright-Test-Report.png)
