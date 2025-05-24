@@ -2,11 +2,13 @@ import { test, expect } from '@playwright/test';
 import { ProductsPage } from '../pages/ProductsPage';
 
 test.describe('Add to cart feature', () => {
-  test('add one item to cart', async ({ page }) => {
+  test.beforeEach(async ({ page }) => {
     console.log('Navigating to inventory page...');
     await page.goto('https://www.saucedemo.com/inventory.html');
     console.log('Current URL:', await page.url()); //verify authentication
+  });
 
+  test('add one item to cart', async ({ page }) => {
     const productsPage = new ProductsPage(page);
     
     console.log('Adding "Sauce Labs Backpack" to cart...');

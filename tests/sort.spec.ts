@@ -2,6 +2,10 @@ import { test, expect } from '@playwright/test';
 import { ProductsPage } from '../pages/ProductsPage';
 
 test.describe('Sort feature', () => {
+  test.afterAll(async () => {
+    console.log('All sorting tests completed.');
+  });
+
   test('sort by name A-Z', async ({ page }) => {
     await page.goto('https://www.saucedemo.com/inventory.html');
     const productsPage = new ProductsPage(page);
