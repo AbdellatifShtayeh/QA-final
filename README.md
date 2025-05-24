@@ -14,6 +14,7 @@ This is a test for the website: [SauceDemo website](https://www.saucedemo.com/).
 
 ## Project Structure
 
+```text
 saucedemo-playwright/
 ├── pages/
 │   ├── LoginPage.ts
@@ -30,6 +31,7 @@ saucedemo-playwright/
 ├── playwright.config.ts
 ├── .env
 └── package.json
+```
 
 
 ##  Test Report
