@@ -8,7 +8,7 @@ export class ProductsPage {
     const addButton = `[data-test="add-to-cart-${slug}"]`;
     await this.page.waitForSelector(addButton, { state: 'visible' });
     await this.page.click(addButton);
-    // Wait for cart badge to update
+    //wait for cart badge to update
     await this.page.waitForSelector('[data-test="shopping-cart-badge"]', { state: 'attached' });
   }
 
@@ -20,7 +20,7 @@ export class ProductsPage {
 
   async sortProducts(option: string) {
     await this.page.selectOption('[data-test="product-sort-container"]', option);
-    // Wait for product list to re-render
+    //wait for product list to re-render
     await this.page.waitForSelector('[data-test="inventory-item"]');
   }
 
